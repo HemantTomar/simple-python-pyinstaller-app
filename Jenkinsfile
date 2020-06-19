@@ -11,6 +11,7 @@ pipeline {
                     //the agent that Jenkins uses to run the Build stage of your Pipeline project.
                     image 'python:2-alpine'
                     label 'docker'
+                    args  '-v /tmp:/tmp'
                 }
             }
             steps {
